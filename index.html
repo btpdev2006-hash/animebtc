@@ -447,9 +447,72 @@
       color: rgba(255, 255, 255, .4);
       letter-spacing: 6px;
       text-transform: uppercase;
-      margin-bottom: 32px;
+      margin-bottom: 18px;
       opacity: 0;
       animation: fadeUp .8s .8s forwards;
+    }
+
+    .chain-data {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp .8s .9s forwards;
+    }
+
+    .chain-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      font-family: 'Orbitron', monospace;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--btc);
+      background: rgba(247, 147, 26, .08);
+      border: 1px solid rgba(247, 147, 26, .25);
+      padding: 6px 12px;
+    }
+
+    .ca-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 100%;
+      font-family: 'Orbitron', monospace;
+      font-size: 11px;
+      letter-spacing: .5px;
+      color: rgba(255, 255, 255, .7);
+      background: rgba(255, 255, 255, .03);
+      border: 1px solid rgba(255, 255, 255, .1);
+      padding: 10px 14px;
+      cursor: pointer;
+      transition: border-color .3s, background .3s;
+      appearance: none;
+      -webkit-appearance: none;
+      text-align: left;
+    }
+
+    .ca-row:hover {
+      border-color: var(--btc);
+      background: rgba(247, 147, 26, .06);
+    }
+
+    .ca-label {
+      color: rgba(255, 255, 255, .35);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 9px;
+      flex-shrink: 0;
+    }
+
+    .ca-value {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #fff;
     }
 
     .hero-buttons {
@@ -1339,9 +1402,19 @@
           <span class="l2">BITCOIN</span>
         </h1>
         <p class="hero-tagline">The Blockchain Warrior on Ethereum</p>
+        <div class="chain-data">
+          <span class="chain-pill">Ethereum · ERC-20</span>
+          <button type="button" class="ca-row" id="heroCopyCA" title="Copy contract address"
+            onclick="navigator.clipboard.writeText('0xCommingSoon');this.querySelector('.ca-label').textContent='Copied';setTimeout(()=>this.querySelector('.ca-label').textContent='CA',1500)">
+            <span class="ca-label">CA</span>
+            <span class="ca-value">0xCommingSoon</span>
+          </button>
+        </div>
         <div class="hero-buttons">
-          <a href="https://app.uniswap.org/#/swap?outputCurrency=0xCommingSoon"
+          <a href="https://app.uniswap.org/swap?chain=ethereum&outputCurrency=0xCommingSoon"
             target="_blank" rel="noopener noreferrer" class="btn btn-primary">Uniswap</a>
+          <a href="https://etherscan.io/address/0xCommingSoon" target="_blank" rel="noopener noreferrer"
+            class="btn btn-outline">Etherscan</a>
           <a href="https://x.com/Anime_BTC_ETH" target="_blank" rel="noopener noreferrer"
             class="btn btn-outline">&#x1D54F; Follow</a>
         </div>
@@ -1473,22 +1546,27 @@
         <p>She doesn't just believe in Bitcoin. <span class="hl">She IS Bitcoin.</span></p>
         <div class="about-stats">
           <div class="stat reveal rd1">
-            <div class="stat-n" style="font-size:22px;line-height:1.2">1B</div>
-            <div class="stat-l">Total Supply</div>
+            <div class="stat-n" style="font-size:18px;line-height:1.2">ETH</div>
+            <div class="stat-l">Ethereum Chain</div>
           </div>
           <div class="stat reveal rd2">
-            <div class="stat-n">&#x2713;</div>
-            <div class="stat-l">Ownership Renounced</div>
+            <div class="stat-n" style="font-size:18px;line-height:1.2">ERC-20</div>
+            <div class="stat-l">Token Standard</div>
           </div>
           <div class="stat reveal rd3">
-            <div class="stat-n">&#x1F512;</div>
-            <div class="stat-l">LP Locked</div>
+            <div class="stat-n" style="font-size:22px;line-height:1.2">1B</div>
+            <div class="stat-l">Total Supply</div>
           </div>
           <div class="stat reveal rd4">
             <div class="stat-n">0/0</div>
             <div class="stat-l">Tax</div>
           </div>
         </div>
+        <button type="button" class="ca-row reveal" style="margin-top:18px;width:100%;justify-content:flex-start"
+          onclick="navigator.clipboard.writeText('0xCommingSoon');this.querySelector('.ca-label').textContent='Copied';setTimeout(()=>this.querySelector('.ca-label').textContent='CA',1500)">
+          <span class="ca-label">CA</span>
+          <span class="ca-value">0xCommingSoon</span>
+        </button>
       </div>
     </div>
   </section>
@@ -1518,7 +1596,7 @@
     <div class="footer-logo">ANIME BITCOIN</div>
     <p class="footer-sub">&#x30A2;&#x30CB;&#x30E1;&#x30D3;&#x30C3;&#x30C8;&#x30B3;&#x30A4;&#x30F3; &middot; The
       Blockchain Warrior</p>
-    <p class="footer-copy">&copy; 2026 Anime Bitcoin. Powered by Ethereum & Uniswap. Not financial advice, just vibes.
+    <p class="footer-copy">&copy; 2026 Anime Bitcoin. Ethereum ERC-20 · CA 0xCommingSoon · Uniswap. Not financial advice, just vibes.
     </p>
   </footer>
 
