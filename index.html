@@ -23,7 +23,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@AnimeBTCGirl">
+  <meta name="twitter:site" content="@Anime_BTC_SOL">
   <meta name="twitter:title" content="Anime Bitcoin - The Blockchain Warrior on Ethereum">
   <meta name="twitter:description"
     content="A community-driven memecoin inspired by anime culture and Bitcoin. Join the movement on Ethereum.">
@@ -1037,69 +1037,6 @@
       color: var(--gold)
     }
 
-    /* COMMUNITY */
-    #community {
-      padding: 120px 40px
-    }
-
-    .links-grid {
-      max-width: 900px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 14px
-    }
-
-    .link-card {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 26px;
-      background: rgba(255, 255, 255, .02);
-      border: 1px solid rgba(255, 255, 255, .05);
-      text-decoration: none;
-      color: #fff;
-      transition: all .3s;
-      position: relative;
-      overflow: hidden
-    }
-
-    .link-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(247, 147, 26, .07), transparent);
-      opacity: 0;
-      transition: opacity .3s
-    }
-
-    .link-card:hover::before {
-      opacity: 1
-    }
-
-    .link-card:hover {
-      border-color: var(--btc);
-      transform: translateY(-3px);
-      box-shadow: 0 8px 30px rgba(247, 147, 26, .08)
-    }
-
-    .link-ico {
-      font-size: 28px;
-      flex-shrink: 0
-    }
-
-    .link-info h4 {
-      font-family: 'Russo One', sans-serif;
-      font-size: 14px;
-      margin-bottom: 3px
-    }
-
-    .link-info p {
-      font-size: 10px;
-      color: rgba(255, 255, 255, .3);
-      letter-spacing: 1px
-    }
-
     /* FOOTER */
     footer {
       padding: 45px 40px 22px;
@@ -1306,10 +1243,6 @@
         aspect-ratio: 1/1
       }
 
-      /* Community */
-      .links-grid {
-        grid-template-columns: 1fr
-      }
     }
 
     @media(max-width:480px) {
@@ -1378,9 +1311,8 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#gallery">Gallery</a>
-      <a href="#community">Community</a>
       <a href="#" class="nav-cta" id="copyCA"
-        onclick="event.preventDefault();navigator.clipboard.writeText('0xa7ee05f3f44f88f4a22b6a7fd07ba3fda9dee28c');this.textContent='Copied!';setTimeout(()=>this.textContent='Official CA',1500)">Official
+        onclick="event.preventDefault();navigator.clipboard.writeText('0xCommingSoon');this.textContent='Copied!';setTimeout(()=>this.textContent='Official CA',1500)">Official
         CA</a>
     </div>
     <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
@@ -1388,9 +1320,8 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="#about" class="mm-link">About</a>
     <a href="#gallery" class="mm-link">Gallery</a>
-    <a href="#community" class="mm-link">Community</a>
     <a href="#"
-      onclick="event.preventDefault();navigator.clipboard.writeText('0xa7ee05f3f44f88f4a22b6a7fd07ba3fda9dee28c');this.textContent='Copied!';setTimeout(()=>this.textContent='Official CA',1500)">Official
+      onclick="event.preventDefault();navigator.clipboard.writeText('0xCommingSoon');this.textContent='Copied!';setTimeout(()=>this.textContent='Official CA',1500)">Official
       CA</a>
   </div>
 
@@ -1409,12 +1340,10 @@
         </h1>
         <p class="hero-tagline">The Blockchain Warrior on Ethereum</p>
         <div class="hero-buttons">
-          <a href="https://app.uniswap.org/#/swap?outputCurrency=0xa7ee05f3f44f88f4a22b6a7fd07ba3fda9dee28c"
+          <a href="https://app.uniswap.org/#/swap?outputCurrency=0xCommingSoon"
             target="_blank" rel="noopener noreferrer" class="btn btn-primary">Uniswap</a>
-          <a href="https://x.com/AnimeBTCGirl" target="_blank" rel="noopener noreferrer"
+          <a href="https://x.com/Anime_BTC_SOL" target="_blank" rel="noopener noreferrer"
             class="btn btn-outline">&#x1D54F; Follow</a>
-          <a href="https://x.com/i/communities/2035187466366292471" target="_blank" rel="noopener noreferrer"
-            class="btn btn-outline">Community</a>
         </div>
         <div class="scroll-hint">
           <div class="scroll-line"></div>
@@ -1582,39 +1511,6 @@
     </div>
   </section>
 
-
-  <!-- COMMUNITY -->
-  <section id="community">
-    <div class="sec-hdr reveal">
-      <p class="sec-label">// Join the Fight</p>
-      <h2 class="sec-title">Join the <em>Community</em></h2>
-    </div>
-    <div class="links-grid">
-      <a href="https://x.com/AnimeBTCGirl" target="_blank" rel="noopener noreferrer" class="link-card reveal rd1">
-        <div class="link-ico">&#x1D54F;</div>
-        <div class="link-info">
-          <h4>Follow on X</h4>
-          <p>@AnimeBTCGirl</p>
-        </div>
-      </a>
-      <a href="https://x.com/i/communities/2035187466366292471" target="_blank" rel="noopener noreferrer"
-        class="link-card reveal rd2">
-        <div class="link-ico">&#x1F465;</div>
-        <div class="link-info">
-          <h4>X Community</h4>
-          <p>Join the warriors</p>
-        </div>
-      </a>
-      <a href="https://app.uniswap.org/#/swap?outputCurrency=0xa7ee05f3f44f88f4a22b6a7fd07ba3fda9dee28c" target="_blank"
-        rel="noopener noreferrer" class="link-card reveal rd3">
-        <div class="link-ico">&#x1F4C8;</div>
-        <div class="link-info">
-          <h4>Uniswap</h4>
-          <p>Swap & liquidity</p>
-        </div>
-      </a>
-    </div>
-  </section>
 
   <!-- FOOTER -->
   <footer>
